@@ -5,11 +5,11 @@ export default function Hero() {
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Photo de fond */}
       <Image
-        src="/images/exposition.jpg"
-        alt="Intérieur lumineux de la boutique Terre de Femmes à Brest"
+        src="/images/interieur_caisse.jpg"
+        alt="Comptoir de la boutique Terre de Femmes à Brest avec le logo"
         fill
         priority
-        className="object-cover object-center"
+        className="object-cover object-top"
       />
 
       {/* Overlay gradient sombre */}

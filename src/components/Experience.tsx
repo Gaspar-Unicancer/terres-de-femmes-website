@@ -9,8 +9,8 @@ export default function Experience() {
           <div className="relative order-2 md:order-1">
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image
-                src="/images/interieur_caisse.jpg"
-                alt="Comptoir de la boutique Terre de Femmes avec l'équipe"
+                src="/images/exposition.jpg"
+                alt="Exposition de bijoux dans la boutique Terre de Femmes"
                 fill
                 className="object-cover object-center"
               />
