@@ -9,7 +9,7 @@ export default function Hero() {
         alt="Comptoir de la boutique Terre de Femmes à Brest avec le logo"
         fill
         priority
-        className="object-cover object-top"
+        className="object-cover object-center"
       />
 
       {/* Overlay gradient sombre */}
