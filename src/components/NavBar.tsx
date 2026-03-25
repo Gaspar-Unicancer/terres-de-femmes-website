@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const links = [
   { label: 'Les Marques', href: '#marques' },
@@ -29,19 +30,17 @@ export default function NavBar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none group">
-          <span
-            className="text-[#C8A050] tracking-[0.3em] uppercase text-xs font-light"
-            style={{ fontFamily: 'var(--font-dm-sans)' }}
-          >
-            TERRE DE
-          </span>
-          <span
-            className="text-white tracking-[0.25em] uppercase text-lg font-light"
-            style={{ fontFamily: 'var(--font-cormorant)' }}
-          >
-            FEMMES
-          </span>
+        <Link href="/" className="flex items-center group">
+          <div className="w-12 h-12 rounded-full overflow-hidden ring-1 ring-[#C8A050]/40 group-hover:ring-[#C8A050] transition-all duration-300">
+            <Image
+              src="/images/logo.jpg"
+              alt="Terre de Femmes"
+              width={48}
+              height={48}
+              className="object-cover w-full h-full"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop nav */}
