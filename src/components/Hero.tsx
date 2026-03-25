@@ -12,8 +12,8 @@ export default function Hero() {
         className="object-cover object-center"
       />
 
-      {/* Overlay gradient sombre */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1C1410]/70 via-[#1C1410]/40 to-[#1C1410]/80" />
+      {/* Overlay gradient sombre — fort au centre/bas où est le texte, léger en haut */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1C1410]/30 via-[#1C1410]/65 to-[#1C1410]/85" />
 
       {/* Contenu */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -28,15 +28,15 @@ export default function Hero() {
 
         <h1
           className="text-5xl md:text-7xl font-light text-white tracking-widest uppercase leading-tight mb-6"
-          style={{ fontFamily: 'var(--font-cormorant)' }}
+          style={{ fontFamily: 'var(--font-cormorant)', textShadow: '0 2px 20px rgba(28,20,16,0.8), 0 0 40px rgba(28,20,16,0.5)' }}
         >
           Terre de<br />
           <span className="text-[#C8A050]">Femmes</span>
         </h1>
 
         <p
-          className="text-white/70 text-base md:text-lg tracking-wide max-w-lg mx-auto mb-10 font-light leading-relaxed"
-          style={{ fontFamily: 'var(--font-dm-sans)' }}
+          className="text-white/90 text-base md:text-lg tracking-wide max-w-lg mx-auto mb-10 font-light leading-relaxed"
+          style={{ fontFamily: 'var(--font-dm-sans)', textShadow: '0 1px 12px rgba(28,20,16,0.9)' }}
         >
           Une sélection pointue de créateurs,<br className="hidden md:block" />
           rien que pour vous.
