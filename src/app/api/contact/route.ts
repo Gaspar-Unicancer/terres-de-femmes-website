@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
-
 export async function POST(request: NextRequest) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+
   try {
     const { name, email, message } = await request.json()
 
@@ -14,14 +14,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Champs manquants' }, { status: 400 })
     }
 
-    // Sauvegarde en base Supabase
     const { error } = await supabase
       .from('contact_messages')
       .insert([{ name, email, message }])
 
     if (error) {
       console.error('Supabase error:', error)
-      // Ne pas bloquer si la table n'existe pas encore
     }
 
     // TODO: Configurer RESEND_API_KEY dans .env.local pour l'envoi email
