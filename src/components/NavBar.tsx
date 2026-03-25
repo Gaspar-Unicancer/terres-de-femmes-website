@@ -28,7 +28,7 @@ export default function NavBar() {
         scrolled ? 'bg-[#1C1410]/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <div className="w-12 h-12 rounded-full overflow-hidden ring-1 ring-[#C8A050]/40 group-hover:ring-[#C8A050] transition-all duration-300">
@@ -49,7 +49,7 @@ export default function NavBar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-white/80 hover:text-[#C8A050] transition-colors duration-200 text-xs tracking-widest uppercase"
+              className="text-white/90 hover:text-[#C8A050] transition-colors duration-200 text-xs tracking-widest uppercase font-medium"
               style={{ fontFamily: 'var(--font-dm-sans)' }}
             >
               {l.label}
@@ -62,7 +62,7 @@ export default function NavBar() {
           href="https://www.instagram.com/terredefemmes_brest/?hl=fr"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 border border-[#C8A050] text-[#C8A050] px-5 py-2 text-xs tracking-widest uppercase hover:bg-[#C8A050] hover:text-[#1C1410] transition-all duration-200"
+          className="hidden md:inline-flex items-center gap-2 bg-[#C8A050]/15 border border-[#C8A050] text-[#C8A050] px-5 py-2 text-xs tracking-widest uppercase hover:bg-[#C8A050] hover:text-[#1C1410] transition-all duration-200"
           style={{ fontFamily: 'var(--font-dm-sans)' }}
         >
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

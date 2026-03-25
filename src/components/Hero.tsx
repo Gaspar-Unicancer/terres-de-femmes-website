@@ -27,38 +27,11 @@ export default function Hero() {
         </div>
 
         <h1
-          className="text-5xl md:text-7xl font-light text-white tracking-widest uppercase leading-tight mb-6"
+          className="text-5xl md:text-7xl font-light text-white tracking-widest uppercase leading-tight"
           style={{ fontFamily: 'var(--font-cormorant)', textShadow: '0 2px 20px rgba(28,20,16,0.8), 0 0 40px rgba(28,20,16,0.5)' }}
         >
-          Terre de<br />
-          <span className="text-[#C8A050]">Femmes</span>
+          Terre de Femmes
         </h1>
-
-        <p
-          className="text-white/90 text-base md:text-lg tracking-wide max-w-lg mx-auto mb-10 font-light leading-relaxed"
-          style={{ fontFamily: 'var(--font-dm-sans)', textShadow: '0 1px 12px rgba(28,20,16,0.9)' }}
-        >
-          Une sélection pointue de créateurs,<br className="hidden md:block" />
-          rien que pour vous.
-        </p>
-
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="#marques"
-            className="bg-[#C8A050] text-[#1C1410] px-8 py-3 text-xs tracking-[0.25em] uppercase font-medium hover:bg-[#B05030] hover:text-white transition-all duration-300"
-            style={{ fontFamily: 'var(--font-dm-sans)' }}
-          >
-            Découvrir les marques
-          </a>
-          <a
-            href="#contact"
-            className="border border-white/50 text-white px-8 py-3 text-xs tracking-[0.25em] uppercase font-light hover:border-[#C8A050] hover:text-[#C8A050] transition-all duration-300"
-            style={{ fontFamily: 'var(--font-dm-sans)' }}
-          >
-            Nous contacter
-          </a>
-        </div>
       </div>
 
       {/* Scroll indicator */}
